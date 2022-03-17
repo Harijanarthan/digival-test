@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.main{ 
+    height: 90vh;  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+}
+.mat-toolbar.mat-primary {
+    background: rgb(6, 42, 110);
+    color: #fff;
+  }
+  .title{
+      font-size: 14px;
+      padding-left: 1em;
+      color: rgb(138, 200, 224);
+  }
+  th.mat-header-cell:last-of-type{
+      width: 100px;
+  }

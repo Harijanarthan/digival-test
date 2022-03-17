@@ -1,0 +1,66 @@
+<!-- <div class="button-row">
+    <button (click)="view()" mat-raised-button>View list of Users</button>
+  </div> -->
+  <mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <span style="cursor:pointer" (click)="home()">Digival</span>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="title">Create a user</span>
+        <button  style="position:absolute;right: 2%;" (click)="view()" mat-raised-button>View list of Users</button>
+    </mat-toolbar-row>
+  </mat-toolbar>
+<div class="main">
+    <form [formGroup]="userForm" class="form-block">
+        <mat-form-field>
+            <mat-label>First Name</mat-label>
+            <input type="text" autocomplete="name" matInput formControlName="firstName">
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Last Name</mat-label>
+            <input type="text" autocomplete="name" matInput formControlName="lastName">
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Email</mat-label>
+            <input type="email" autocomplete="email" matInput formControlName="email">
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Phone</mat-label>
+            <input type="text" autocomplete="phone" matInput formControlName="phone">
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Address</mat-label>
+            <input type="text" autocomplete="address-level1" matInput formControlName="address">
+          </mat-form-field>
+          <div class="button-row">
+            <button  mat-raised-button (click)="clear()">Cancel</button>
+            <button  mat-raised-button [disabled]="!userForm.valid" (click)="submit(userForm.value)">Save</button>
+          </div>
+    </form>
+  
+</div>
+<!-- <form class="example-form">
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Email</mat-label>
+      <input type="email" matInput  placeholder="Ex. pat@example.com">
+    </mat-form-field>
+    <br>
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Email</mat-label>
+        <input type="email" matInput  placeholder="Ex. pat@example.com">
+      </mat-form-field>
+      <br>
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Email</mat-label>
+        <input type="email" matInput  placeholder="Ex. pat@example.com">
+      </mat-form-field>
+      <br>
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Email</mat-label>
+        <input type="email" matInput  placeholder="Ex. pat@example.com">
+      </mat-form-field>
+      <br>
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Email</mat-label>
+        <input type="email" matInput  placeholder="Ex. pat@example.com">
+      </mat-form-field>
+  </form> -->
